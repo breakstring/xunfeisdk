@@ -1,0 +1,34 @@
+{
+    "name": "xunfeisdk",
+    "version": "0.0.1",
+    "description": "科大讯飞WebAPI JS版",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "test": "tsc && mocha -R nyan -t 15000 -r ts-node/register \"./test/**/*.ts\"",
+        "build": "tsc"
+    },
+    "keywords": [
+        "科大讯飞",
+        "讯飞",
+        "Xunfei",
+        "语音识别",
+        "语音评测",
+        "听写",
+        "识别"
+    ],
+    "author": "Kenn Zhang",
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^0.18.0"
+    },
+    "devDependencies": {
+        "@types/chai": "^4.1.2",
+        "@types/mocha": "^5.0.0",
+        "@types/node": "^9.6.5",
+        "chai": "^4.1.2",
+        "mocha": "^5.1.0",
+        "ts-node": "^6.0.0",
+        "typescript": "^2.8.1"
+    }
+}
