@@ -1,7 +1,7 @@
 {
     "name": "xunfeisdk",
-    "version": "0.0.1",
-    "description": "科大讯飞WebAPI JS版",
+    "version": "0.0.2",
+    "description": "科大讯飞 WebAPI JS版",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "scripts": {
@@ -17,8 +17,20 @@
         "听写",
         "识别"
     ],
-    "author": "Kenn Zhang",
+    "author": {
+        "name": "Kenn Zhang",
+        "email": "breakstring@hotmail.com",
+        "url": "https://github.com/breakstring/xunfeisdk"
+    },
     "license": "MIT",
+    "homepage": "https://github.com/breakstring/xunfeisdk",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/breakstring/xunfeisdk"
+    },
+    "bugs": {
+        "url": "https://github.com/breakstring/xunfeisdk/issues"
+    },
     "dependencies": {
         "axios": "^0.18.0"
     },

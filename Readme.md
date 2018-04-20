@@ -38,16 +38,30 @@ const client = new Xunfei.Client("Your AppID");
 // 语音评测服务（根据基准文字给语音朗读打分）
 client.ISEAppKey = "语音评测的 AppKey";
 const audio = fs.readFileSync(path.join(__dirname, "评测文件.wav"));
-const result = await client.ISE(audio, "基准文字", ISEAueType.RAW, ISELanguageType.EN, ISECategoryType.SENTENCE, ISEResultLevelType.COMPLETE);
+try {
+    const result = await client.ISE(audio, "基准文字", ISEAueType.RAW, ISELanguageType.EN, ISECategoryType.SENTENCE, ISEResultLevelType.COMPLETE);
+
+} catch (error) {
+    // Oops...
+}
+
 
 // 语音听写(即语音转换为文字)
 client.IATAppKey = “语音听写服务的 AppKey”;
 const audio = fs.readFileSync(path.join(__dirname, "要转换为文字的音频.wav"));
-const result = await client.IAT(audio, IATEngineType.SMS16K_English, IATAueType.RAW);
+try{
+    const result = await client.IAT(audio, IATEngineType.SMS16K_English, IATAueType.RAW);
+} catch (error) {
+    // Oops...
+}
 
 // 语音合成 (即根据文字来生成音频)
 client.TTSAppKey = "语音合成服务的 AppKey";
-const result = await client.TTS("科大讯飞的接口文档写的太烂了", TTSAufType.L16_8K, TTSAueType.LAME, TTSVoiceName.XiaoYan);
+try {
+    const result = await client.TTS("科大讯飞的接口文档写的太烂了", TTSAufType.L16_8K, TTSAueType.LAME, TTSVoiceName.XiaoYan);
+} catch (error) {
+    // Oops...
+}
 const mp3 = path.join(__dirname, "要存成的文件.mp3");
 fs.writeFileSync(mp3, result.audio, "binary");
 ```
