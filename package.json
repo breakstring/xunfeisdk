@@ -1,6 +1,6 @@
 {
     "name": "xunfeisdk",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "科大讯飞 WebAPI JS版",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
