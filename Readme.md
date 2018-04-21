@@ -59,9 +59,9 @@ try{
 client.TTSAppKey = "语音合成服务的 AppKey";
 try {
     const result = await client.TTS("科大讯飞的接口文档写的太烂了", TTSAufType.L16_8K, TTSAueType.LAME, TTSVoiceName.XiaoYan);
+    const mp3 = path.join(__dirname, "要存成的文件.mp3");
+    fs.writeFileSync(mp3, result.audio, "binary");
 } catch (error) {
     // Oops...
 }
-const mp3 = path.join(__dirname, "要存成的文件.mp3");
-fs.writeFileSync(mp3, result.audio, "binary");
 ```
