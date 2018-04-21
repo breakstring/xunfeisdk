@@ -1,8 +1,21 @@
 .travis.yml
 language: node_js
 node_js:
+ - "lts"
  - "8"
-before_script:
+cache:
+  directories:
+    - "node_modules"
+branches:
+  only:
+    - master
+before_install:
+ - npm install -g typescript ts-node mocha
+install:
  - npm install
+before_script:
+ - tsc
 script: 
  - npm test
+git:
+  depth: 1
