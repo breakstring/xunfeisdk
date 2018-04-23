@@ -1,7 +1,7 @@
 {
     "name": "xunfeisdk",
-    "version": "0.0.4",
-    "description": "科大讯飞 WebAPI JS版",
+    "version": "1.0.0",
+    "description": "科大讯飞 WebAPI 的非官方 NodeJS 版 SDK",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "scripts": {
@@ -9,19 +9,29 @@
         "build": "tsc"
     },
     "keywords": [
+        "xunfei",
+        "keda",
+        "kedaxunfei",
+        "xunfeisdk",
         "科大讯飞",
         "讯飞",
-        "Xunfei",
+        "科大",
+        "语音合成",
+        "TTS",
         "语音识别",
         "语音评测",
         "听写",
-        "识别"
+        "识别",
+        "合成",
+        "汉语",
+        "英语"
     ],
     "author": {
         "name": "Kenn Zhang",
         "email": "breakstring@hotmail.com",
         "url": "https://github.com/breakstring/xunfeisdk"
     },
+    "private": false,
     "license": "MIT",
     "homepage": "https://github.com/breakstring/xunfeisdk",
     "repository": {
