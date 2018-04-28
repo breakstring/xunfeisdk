@@ -62,3 +62,61 @@ exports.ResponseCodes = [
         Resolve: "服务单日调用次数超过限制	确认服务单日调用次数是否超过限制",
     },
 ];
+/**
+ * 增漏读说明
+ *
+ * @export
+ * @enum {number}
+ */
+var DP_MESSAGE;
+(function (DP_MESSAGE) {
+    /**
+     * 引擎认为该单元读了，但是不一定朗读正确
+     */
+    DP_MESSAGE["Normal"] = "0";
+    /**
+     * 漏读，该单元没有读
+     */
+    DP_MESSAGE["Miss"] = "16";
+    /**
+     * 增读，该单元是多度的文本内的内容
+     */
+    DP_MESSAGE["Extra"] = "32";
+    /**
+     * 回读，该单元是重复读的相邻文本的内容
+     */
+    DP_MESSAGE["Repeat"] = "64";
+    /**
+     * 替换，该单元读成了文本内其他的内容
+     */
+    DP_MESSAGE["Replace"] = "128";
+})(DP_MESSAGE = exports.DP_MESSAGE || (exports.DP_MESSAGE = {}));
+/**
+ * 异常信息
+ *
+ * @export
+ * @enum {number}
+ */
+var EXCEPT_INFO;
+(function (EXCEPT_INFO) {
+    /**
+     * 无异常
+     */
+    EXCEPT_INFO["Normal"] = "0";
+    /**
+     * 无语音输入或者音量太小
+     */
+    EXCEPT_INFO["VolumeOutOfRange"] = "28673";
+    /**
+     * 检测到语音为乱说类型
+     */
+    EXCEPT_INFO["Nonsense"] = "28676";
+    /**
+     * 音频的信噪比太低
+     */
+    EXCEPT_INFO["LowSignalNoseRatio"] = "28680";
+    /**
+     * 音频数据出现截幅
+     */
+    EXCEPT_INFO["AmpTruncated"] = "28690";
+})(EXCEPT_INFO = exports.EXCEPT_INFO || (exports.EXCEPT_INFO = {}));
