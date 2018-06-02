@@ -1,5 +1,5 @@
 # xunfeisdk
-科大讯飞 Web API 的 NodeJS 版封装。
+科大讯飞 Web API 的 TypeScript 版封装，可以方便的用于NodeJS环境下。
 
 
 [![Build Status](https://travis-ci.org/breakstring/xunfeisdk.svg?branch=master)](https://travis-ci.org/breakstring/xunfeisdk)
@@ -11,7 +11,7 @@
 [![NPM](https://nodei.co/npm/xunfeisdk.png)](https://npmjs.org/package/xunfeisdk)
 ## 特点
 - TypeScript 源代码, 带 .d.ts 类型定义。 可方便的用于 TS 或者 NodeJS项目中。
-- Promise 型方法，支持 async / await 语句访问。 
+- Promise 型方法，支持 async / await 语句访问。 
 
 ## 安装
 
