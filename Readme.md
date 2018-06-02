@@ -43,7 +43,8 @@ npm run test
 
 ## 使用
 
-``` Javascript
+``` TypeScript
+// 如果用在Nodejs环境中请使用 const xunfeisdk = require("xunfeisdk");的方式来引入包，或者使用ts-node之类的来直接执行ts
 import * as Xunfei from "xunfeisdk";
 import { IATAueType, IATEngineType, ISEAueType, ISECategoryType, ISELanguageType, ISEResultLevelType, TTSAueType, TTSAufType, TTSEngineType, TTSVoiceName } from "xunfeisdk";
 
