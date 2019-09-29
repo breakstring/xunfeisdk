@@ -41,6 +41,9 @@ cp config_template.ts config.ts
 npm run test
 ```
 
+## 已知问题
+由于讯飞更改了其官方接口，不再支持新的WebAPI请求方式的应用，新应用只是支持流式API。如果您之前没有申请过TTS和IAT的API Key可能会导致测试无法通过。故临时更改了测试脚本只是保留了ISE（即语音评测部分）
+
 ## 使用
 
 ``` TypeScript
