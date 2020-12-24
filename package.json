@@ -42,7 +42,7 @@
         "url": "https://github.com/breakstring/xunfeisdk/issues"
     },
     "dependencies": {
-        "axios": "^0.18.0"
+        "axios": "^0.21.1"
     },
     "devDependencies": {
         "@types/chai": "^4.1.3",
